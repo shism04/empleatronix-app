@@ -31,7 +31,7 @@ The easiest way to run this project is using **Docker**, which handles all depen
 
     ```Bash
     git clone https://github.com/shism04/empleatronix-app.git
-    cd hola-neurona-app
+    cd empleatronix-app
     ```
 2. **Launch the application:**
 Run the following command in the root directory:
