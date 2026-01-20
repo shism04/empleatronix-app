@@ -16,31 +16,54 @@ Interactive Customization:
 
 Dynamic Visualization: Responsive horizontal bar chart built with Matplotlib.
 
-🛠️ Installation & Setup
-To run this project locally, follow these steps:
+## 🛠️ Installation & Setup
 
-Clone the repository:
+The easiest way to run this project is using **Docker**, which handles all dependencies and environment configurations automatically.
 
-```Bash
-git clone https://github.com/shism04/empleatronix-app.git
-cd empleatronix
-Create a virtual environment (Optional but recommended):
-```
-```Bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-Install dependencies: Make sure you have pip installed.
-```
-```Bash
-pip install streamlit pandas matplotlib
-Prepare the data: Ensure your CSV file is located at ./resources/employees.csv with at least the following columns: full name and salary.
-```
-🚀 How to Run
-Launch the application by running the following command in your terminal:
+### Prerequisites
 
-```Bash
-streamlit run app.py
-```
+- [Docker](https://docs.docker.com/get-docker/) installed.
+- [Docker Compose](https://docs.docker.com/compose/install/) installed.
+
+### Steps to Run
+
+1. **Clone the repository:**
+
+    ```Bash
+    git clone https://github.com/shism04/empleatronix-app.git
+    cd hola-neurona-app
+    ```
+2. **Launch the application:**
+Run the following command in the root directory:
+
+    ```Bash
+    docker-compose up --build
+    ```
+3. **Access the app:**
+Once the containers are running, open your browser and go to:
+`http://localhost:8501`
+
+---
+
+### 🛠 Alternative: Local Development (Manual)
+
+If you prefer to run it without Docker, follow these steps:
+
+1. **Create and activate a virtual environment:**
+    ```Bash
+    python -m venv venv
+    ```
+    On Windows: venv\Scripts\activate | On Unix: source venv/bin/activate`
+    
+2. **Install dependencies:**
+    ```Bash
+    pip install -r requirements.txt
+    ```
+3. **Run the Streamlit app:**
+    ```Bash
+    streamlit run app.py
+    ```
+
 📁 Project Structure
 Plaintext
 
